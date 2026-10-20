@@ -1,0 +1,31 @@
+{
+  "name": "popmango-suwatte-test",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Test sources for Suwatte",
+  "suwatte": {
+    "listName": "PoppingMango Test"
+  },
+  "scripts": {
+    "test": "tsx test-runner.ts",
+    "serve": "suwatte serve",
+    "build": "suwatte build"
+  },
+  "license": "GPL-3.0-or-later",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "12.14.0",
+      "onFail": "download"
+    }
+  },
+  "packageManager": "pnpm@12.14.0",
+  "dependencies": {
+    "@suwatte/toolchain": "^1.0.0",
+    "cheerio": "^1.2.0",
+    "tsc-rs": "^0.7.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.23.15"
+  }
+}
